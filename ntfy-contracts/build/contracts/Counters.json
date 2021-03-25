@@ -1,0 +1,36 @@
+{
+  "abiDefinition": [],
+  "deployedAddress": "0x959d47ef2E2C1c3F2c51a9b34D5998B289F791e9",
+  "className": "Counters",
+  "args": [],
+  "gas": 74423,
+  "gasPrice": "20000000000",
+  "silent": false,
+  "track": true,
+  "deploy": true,
+  "realRuntimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220c8ccfbd3ae7c5727ac",
+  "realArgs": [],
+  "code": "60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220c8ccfbd3ae7c5727ac2b2db34c404bebd413960d1bf7ab334609a100e288c3da64736f6c63430006020033",
+  "runtimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220c8ccfbd3ae7c5727ac2b2db34c404bebd413960d1bf7ab334609a100e288c3da64736f6c63430006020033",
+  "linkReferences": {},
+  "swarmHash": "2b2db34c404bebd413960d1bf7ab334609a100e288c3da64736f6c6343000602",
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "17200",
+      "executionCost": "97",
+      "totalCost": "17297"
+    },
+    "internal": {
+      "current(struct Counters.Counter storage pointer)": "infinite",
+      "decrement(struct Counters.Counter storage pointer)": "infinite",
+      "increment(struct Counters.Counter storage pointer)": "infinite"
+    }
+  },
+  "functionHashes": {},
+  "filename": "/Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/.embark/node_modules/@openzeppelin/contracts/utils/Counters.sol",
+  "originalFilename": "contracts//Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/.embark/node_modules/@openzeppelin/contracts/utils/Counters.sol",
+  "path": "/Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/contracts/.embark/node_modules/@openzeppelin/contracts/utils/Counters.sol",
+  "type": "file",
+  "deploymentAccount": "0xF652FcF94b5BbDCAC3BF508c6453Cca69bB4213A",
+  "transactionHash": "0xeba5eeab014eee5670dbf0390265aa5ec879382201e03124ea219427592046ba"
+}

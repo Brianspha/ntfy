@@ -1,0 +1,44 @@
+{
+  "abiDefinition": [],
+  "deployedAddress": "0x628De43594C0AAbf46bEDeb1A9Dec436b903e84c",
+  "className": "Address",
+  "args": [],
+  "gas": 74156,
+  "gasPrice": "20000000000",
+  "silent": false,
+  "track": true,
+  "deploy": true,
+  "realRuntimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220046b03931d6efe2d94",
+  "realArgs": [],
+  "code": "60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220046b03931d6efe2d9466ad3502ce28d8e9644be1a0d1bbf764762c011b7cb60c64736f6c63430006020033",
+  "runtimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220046b03931d6efe2d9466ad3502ce28d8e9644be1a0d1bbf764762c011b7cb60c64736f6c63430006020033",
+  "linkReferences": {},
+  "swarmHash": "66ad3502ce28d8e9644be1a0d1bbf764762c011b7cb60c64736f6c6343000602",
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "17200",
+      "executionCost": "97",
+      "totalCost": "17297"
+    },
+    "internal": {
+      "_verifyCallResult(bool,bytes memory,string memory)": "infinite",
+      "functionCall(address,bytes memory)": "infinite",
+      "functionCall(address,bytes memory,string memory)": "infinite",
+      "functionCallWithValue(address,bytes memory,uint256)": "infinite",
+      "functionCallWithValue(address,bytes memory,uint256,string memory)": "infinite",
+      "functionDelegateCall(address,bytes memory)": "infinite",
+      "functionDelegateCall(address,bytes memory,string memory)": "infinite",
+      "functionStaticCall(address,bytes memory)": "infinite",
+      "functionStaticCall(address,bytes memory,string memory)": "infinite",
+      "isContract(address)": "infinite",
+      "sendValue(address payable,uint256)": "infinite"
+    }
+  },
+  "functionHashes": {},
+  "filename": "/Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/.embark/node_modules/@openzeppelin/contracts/utils/Address.sol",
+  "originalFilename": "contracts//Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/.embark/node_modules/@openzeppelin/contracts/utils/Address.sol",
+  "path": "/Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/contracts/.embark/node_modules/@openzeppelin/contracts/utils/Address.sol",
+  "type": "file",
+  "deploymentAccount": "0xF652FcF94b5BbDCAC3BF508c6453Cca69bB4213A",
+  "transactionHash": "0xfd6c2cdbf43808257d99a214a6f93aecc08541db155f742a9f6d34af33b2bc3b"
+}

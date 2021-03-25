@@ -1,0 +1,46 @@
+{
+  "abiDefinition": [],
+  "deployedAddress": "0x7A82d12973437B83e704B79aFeE21Ef0411E805A",
+  "className": "SafeMath",
+  "args": [],
+  "gas": 77238,
+  "gasPrice": "20000000000",
+  "silent": false,
+  "track": true,
+  "deploy": true,
+  "realRuntimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212200b8bfc346ebd6776c2",
+  "realArgs": [],
+  "code": "60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212200b8bfc346ebd6776c28f576bc6b9bd94324090d4394db1fb37d45a44c45ca57964736f6c63430006020033",
+  "runtimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212200b8bfc346ebd6776c28f576bc6b9bd94324090d4394db1fb37d45a44c45ca57964736f6c63430006020033",
+  "linkReferences": {},
+  "swarmHash": "8f576bc6b9bd94324090d4394db1fb37d45a44c45ca57964736f6c6343000602",
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "17200",
+      "executionCost": "97",
+      "totalCost": "17297"
+    },
+    "internal": {
+      "add(uint256,uint256)": "infinite",
+      "div(uint256,uint256)": "infinite",
+      "div(uint256,uint256,string memory)": "infinite",
+      "mod(uint256,uint256)": "infinite",
+      "mod(uint256,uint256,string memory)": "infinite",
+      "mul(uint256,uint256)": "infinite",
+      "sub(uint256,uint256)": "infinite",
+      "sub(uint256,uint256,string memory)": "infinite",
+      "tryAdd(uint256,uint256)": "infinite",
+      "tryDiv(uint256,uint256)": "infinite",
+      "tryMod(uint256,uint256)": "infinite",
+      "tryMul(uint256,uint256)": "infinite",
+      "trySub(uint256,uint256)": "infinite"
+    }
+  },
+  "functionHashes": {},
+  "filename": "/Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/.embark/node_modules/@openzeppelin/contracts/math/SafeMath.sol",
+  "originalFilename": "contracts//Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/.embark/node_modules/@openzeppelin/contracts/math/SafeMath.sol",
+  "path": "/Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/contracts/.embark/node_modules/@openzeppelin/contracts/math/SafeMath.sol",
+  "type": "file",
+  "deploymentAccount": "0xF652FcF94b5BbDCAC3BF508c6453Cca69bB4213A",
+  "transactionHash": "0x15a9a134c0a1e5730ef00a85893666ef294fa1de0c6b3ca4814ccea466f8676d"
+}
