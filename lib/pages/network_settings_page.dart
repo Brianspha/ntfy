@@ -149,8 +149,8 @@ class NetworkSettingsPageState extends State<NetworkSettingsPage> {
                         setState(() {
                           valid = false;
                         });
-                        showSnackBar(parentContext, 0,
-                            "Network URL and Block Explorer must follow the format 'http://url or https://url' and the network name must be atleast 6 characters in length");
+                        showSnackBar(parentContext,
+                            "Network URL and Block Explorer must follow the format 'http://url or https://url' and the network name must be atleast 6 characters in length", AppColors.red);
                       } else {
                         setState(() {
                           setState(() {
@@ -180,15 +180,15 @@ class NetworkSettingsPageState extends State<NetworkSettingsPage> {
                                     network_name: networkNameController.text,
                                     isDefault: 1));
                               });
-                              showSnackBar(parentContext, 0,
-                                  "Added new Account ${networkNameController.text}");
+                              showSnackBar(parentContext,
+                                  "Added new Account ${networkNameController.text}",AppColors.primaryColor);
                             }).catchError((onError) {
                               print('error saving account $onError');
                               setState(() {
                                 this.isLoading = false;
                               });
-                              showSnackBar(parentContext, 0,
-                                  "Something went wrong whilst adding new network ${networkNameController.text}");
+                              showSnackBar(parentContext,
+                                  "Something went wrong whilst adding new network ${networkNameController.text}",AppColors.primaryColor);
                             });
                           } else {
                             //@dev inconsistent coding will refactor later
@@ -208,15 +208,15 @@ class NetworkSettingsPageState extends State<NetworkSettingsPage> {
                                     network_name: networkNameController.text,
                                     isDefault: 0));
                               });
-                              showSnackBar(parentContext, 0,
-                                  "Added new Network ${networkNameController.text}");
+                              showSnackBar(parentContext,
+                                  "Added new Network ${networkNameController.text}",AppColors.primaryColor);
                             }).catchError((onError) {
                               print('error saving account $onError');
                               setState(() {
                                 this.isLoading = false;
                               });
-                              showSnackBar(parentContext, 0,
-                                  "Something went wrong whilst adding new account ${networkNameController.text}");
+                              showSnackBar(parentContext,
+                                  "Something went wrong whilst adding new account ${networkNameController.text}",AppColors.red);
                             });
                           }
                           Navigator.of(parentContext, rootNavigator: true).pop();
@@ -309,19 +309,21 @@ class NetworkSettingsPageState extends State<NetworkSettingsPage> {
                                                           network_url: "NULL",network_name: "NULL", network_block_explorer: "NULL",isDefault: 0));
                                                         showSnackBar(
                                                             parentContext,
-                                                            index,
-                                                            "Deleted network ${networks[index].network_name}");
+                                                            "Deleted network ${networks[index].network_name}",AppColors.primaryColor);
                                                       } else {
                                                         showSnackBar(
                                                             parentContext,
-                                                            index,
-                                                            "Could not delete network  ${networks[index].network_name}");
+                                                            "Could not delete network  ${networks[index].network_name}",AppColors.red);
                                                       }
                                                       networks.removeAt(index);
                                                       this.isLoading = false;
                                                     }).catchError((onError) {
                                                       print(
                                                           'error deleting network: $onError');
+                                                      showSnackBar(
+                                                          parentContext,
+                                                          "Could not delete network  ${networks[index].network_name}",AppColors.red);
+
                                                     });
                                                   });
                                                 },
@@ -351,8 +353,7 @@ class NetworkSettingsPageState extends State<NetworkSettingsPage> {
                                                           'Changed default account results: $value');
                                                       showSnackBar(
                                                           parentContext,
-                                                          index,
-                                                          "Successfully changed default account address to ${networks[index].network_name}");
+                                                          "Successfully changed default account address to ${networks[index].network_name}", AppColors.primaryColor);
                                                     });
                                                   });
                                                 },
@@ -406,21 +407,15 @@ class NetworkSettingsPageState extends State<NetworkSettingsPage> {
   }
 
   ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showSnackBar(
-      BuildContext parentContext, int index, String message) {
+      BuildContext parentContext,  String message, Color color) {
     return ScaffoldMessenger.of(parentContext).showSnackBar(SnackBar(
-      backgroundColor: AppColors.primaryColor,
+      backgroundColor: color,
       content:
           Text(message, style: TextStyle(color: Colors.white, fontSize: 16)),
     ));
   }
 }
 
-void showSnackBar(BuildContext parentContext, int index, String message) {
-  ScaffoldMessenger.of(parentContext).showSnackBar(SnackBar(
-    backgroundColor: AppColors.primaryColor,
-    content: Text(message, style: TextStyle(color: Colors.white, fontSize: 16)),
-  ));
-}
 
 Future<bool> deleteNetwork(String network_name) async {
   var deleted =

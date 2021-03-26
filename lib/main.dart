@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ntfy/database/cache_db.dart';
 import 'package:ntfy/pages/application_introduction_page.dart';
 import 'package:ntfy/pages/main_menu.dart';
-import 'package:ntfy/pages/main_menu_V2.dart';
+import 'package:ntfy/pages/dashboard_page_v2.dart';
 import 'package:ntfy/pages/select_image_page.dart';
 import 'package:ntfy/pages/splash_screen_page.dart';
 import 'package:ntfy/scoped_models/app_store.dart';

@@ -7,7 +7,7 @@ import 'package:ntfy/models/account.dart';
 import 'package:ntfy/models/network.dart';
 import 'package:ntfy/models/token.dart';
 import 'package:ntfy/models/user.dart';
-import 'package:ntfy/pages/main_menu_V2.dart';
+import 'package:ntfy/pages/dashboard_page_v2.dart';
 import 'package:ntfy/scoped_models/app_store.dart';
 import 'package:ntfy/service_locator.dart';
 import 'package:ntfy/utils/constants.dart';

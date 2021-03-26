@@ -98,7 +98,7 @@ class TokenSettingsPageState extends State<TokenSettingsPage> {
                       valid = false;
                     });
                     showSnackBar(parentContext, 0,
-                        "Token Address must be 42 characters long");
+                        "Token Address must be 42 characters long", AppColors.red);
                   } else {
                     setState(() {
                       valid = true;
@@ -129,6 +129,8 @@ class TokenSettingsPageState extends State<TokenSettingsPage> {
                           });
                         }).catchError((onError) {
                           print('error saving token $onError');
+                          showSnackBar(parentContext, 0,
+                              "Something went wrong whilst add new token", AppColors.red);
                           setState(() {
                             this.isLoading = false;
                           });
@@ -141,6 +143,8 @@ class TokenSettingsPageState extends State<TokenSettingsPage> {
                                 isDefault: 0))
                             .then((value) {
                           print('results of saving new token $value');
+                          showSnackBar(parentContext, 0,
+                              "Successfully added new token", AppColors.primaryColor);
                           setState(() {
                             this.isLoading = false;
                             tokens.add(Token(
@@ -158,7 +162,7 @@ class TokenSettingsPageState extends State<TokenSettingsPage> {
                       // ignore: unnecessary_statements
                       //   tokenAddressController = new TextEditingController();
                       showSnackBar(parentContext, 0,
-                          "Added new token ${tokenAddressController.text}");
+                          "Added new token ${tokenAddressController.text}", AppColors.primaryColor);
                       Navigator.of(parentContext, rootNavigator: true).pop();
                     });
                   }
@@ -254,12 +258,12 @@ class TokenSettingsPageState extends State<TokenSettingsPage> {
                                                         showSnackBar(
                                                             parentContext,
                                                             index,
-                                                            "Deleted token ${tokens[index].token_address}");
+                                                            "Deleted token ${tokens[index].token_address}", AppColors.primaryColor);
                                                       } else {
                                                         showSnackBar(
                                                             parentContext,
                                                             index,
-                                                            "Could not delete token ${tokens[index].token_address}");
+                                                            "Could not delete token ${tokens[index].token_address}",AppColors.red);
                                                       }
                                                       tokens.removeAt(index);
                                                       this.isLoading = false;
@@ -297,7 +301,7 @@ class TokenSettingsPageState extends State<TokenSettingsPage> {
                                                       showSnackBar(
                                                           parentContext,
                                                           index,
-                                                          "Successfully changed default token address to ${tokens[index].token_address}");
+                                                          "Successfully changed default token address to ${tokens[index].token_address}", AppColors.primaryColor);
                                                     });
                                                   });
                                                 },
@@ -352,14 +356,15 @@ class TokenSettingsPageState extends State<TokenSettingsPage> {
     );
   }
 
-  ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showSnackBar(
-      BuildContext parentContext, int index, String message) {
-    return ScaffoldMessenger.of(parentContext).showSnackBar(SnackBar(
-      backgroundColor: AppColors.primaryColor,
-      content:
-          Text(message, style: TextStyle(color: Colors.white, fontSize: 16)),
-    ));
-  }
+
+}
+ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showSnackBar(
+    BuildContext parentContext, int index, String message, Color snackColor) {
+  return ScaffoldMessenger.of(parentContext).showSnackBar(SnackBar(
+    backgroundColor: snackColor,
+    content:
+    Text(message, style: TextStyle(color: Colors.white, fontSize: 16)),
+  ));
 }
 
 Future<bool> updateDefaultSettings(User settings) async {

@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:loading_overlay/loading_overlay.dart';
 import 'package:ntfy/database/cache_db.dart';
+import 'package:ntfy/pages/dashboard_page_v2.dart';
 import 'package:ntfy/scoped_models/app_store.dart';
 import 'package:ntfy/service_locator.dart';
 import 'package:ntfy/ui/shared/app_colors.dart';
@@ -157,25 +158,26 @@ class NFTMetaDataPageState extends State<NFTMetaDataPage> {
                                 if (validDescription &&
                                     valid &&
                                     (userSettings != null &&
-                                        userSettings.network_url.isNotEmpty) &&
+                                        userSettings.network_url != "NULL") &&
                                     (userSettings != null &&
-                                        userSettings.private_key.isNotEmpty) &&
+                                        userSettings.private_key != "NULL") &&
                                     (userSettings != null &&
-                                        userSettings.token_address.isNotEmpty)) {
+                                        userSettings.token_address != "NULL")) {
                                   var skyLink = await locator
                                       .get<SkynetFunctions>()
                                       .uploadFile(
-                                      model.getImagePath,
-                                      titleControler.text,
-                                      descriptionControler.text);
+                                          model.getImagePath,
+                                          titleControler.text,
+                                          descriptionControler.text);
                                   print("skyLink upload: $skyLink");
                                   locator
                                       .get<NFTFunctions>()
                                       .loadContract()
                                       .then((value) async {
-                                    var credentials = await EthPrivateKey.fromHex(
-                                        userSettings.private_key)
-                                        .extractAddress();
+                                    var credentials =
+                                        await EthPrivateKey.fromHex(
+                                                userSettings.private_key)
+                                            .extractAddress();
                                     var results = await locator
                                         .get<NFTFunctions>()
                                         .submit("mintToken", [
@@ -187,13 +189,14 @@ class NFTMetaDataPageState extends State<NFTMetaDataPage> {
                                     setState(() {
                                       this.isLoading = false;
                                     });
+                                    Navigator.push(context, new MaterialPageRoute(builder: (builder)=>new MainMenuPageV2()));
                                     showSnackBar(context,
-                                        "Successfully minted new NFT with transaction receipt of $results");
+                                        "Successfully minted new NFT with transaction receipt of $results",AppColors.primaryColor);
                                   });
                                 } else {
                                   this.isLoading = false;
                                   showSnackBar(context,
-                                      "Unable to mint NFT, please ensure you have set the default token address, account and the network url");
+                                      "Unable to mint NFT, please ensure you have set the default token address, account and the network url",AppColors.red);
                                 }
                               },
                               padding: EdgeInsets.symmetric(vertical: 15),
@@ -201,11 +204,11 @@ class NFTMetaDataPageState extends State<NFTMetaDataPage> {
                               child: Center(
                                   child: FittedBox(
                                       child: Text(
-                                        'MINT',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                        ),
-                                      ))),
+                                'MINT',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ))),
                             ),
                           ),
                         ],
@@ -213,7 +216,6 @@ class NFTMetaDataPageState extends State<NFTMetaDataPage> {
                     ],
                   ),
                 ),
-
               ],
             )),
           ),
@@ -225,9 +227,9 @@ class NFTMetaDataPageState extends State<NFTMetaDataPage> {
 }
 
 ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showSnackBar(
-    BuildContext parentContext, String message) {
+    BuildContext parentContext, String message, Color snackColor) {
   return ScaffoldMessenger.of(parentContext).showSnackBar(SnackBar(
-    backgroundColor: AppColors.primaryColor,
+    backgroundColor: snackColor,
     content: Text(message, style: TextStyle(color: Colors.white, fontSize: 16)),
   ));
 }

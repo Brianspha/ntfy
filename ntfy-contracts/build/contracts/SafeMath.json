@@ -1,19 +1,19 @@
 {
   "abiDefinition": [],
-  "deployedAddress": "0x7A82d12973437B83e704B79aFeE21Ef0411E805A",
+  "deployedAddress": "0xFaa4652968c1B3331D4832c40FB2d7513842f427",
   "className": "SafeMath",
   "args": [],
-  "gas": 77238,
+  "gas": 72567,
   "gasPrice": "20000000000",
   "silent": false,
   "track": true,
   "deploy": true,
-  "realRuntimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212200b8bfc346ebd6776c2",
+  "realRuntimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220c766d8e2e6059a13aa",
   "realArgs": [],
-  "code": "60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212200b8bfc346ebd6776c28f576bc6b9bd94324090d4394db1fb37d45a44c45ca57964736f6c63430006020033",
-  "runtimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212200b8bfc346ebd6776c28f576bc6b9bd94324090d4394db1fb37d45a44c45ca57964736f6c63430006020033",
+  "code": "60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220c766d8e2e6059a13aa44333e224d57d9f58a2c778bf012d0f9358dcece2251ed64736f6c63430006020033",
+  "runtimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220c766d8e2e6059a13aa44333e224d57d9f58a2c778bf012d0f9358dcece2251ed64736f6c63430006020033",
   "linkReferences": {},
-  "swarmHash": "8f576bc6b9bd94324090d4394db1fb37d45a44c45ca57964736f6c6343000602",
+  "swarmHash": "44333e224d57d9f58a2c778bf012d0f9358dcece2251ed64736f6c6343000602",
   "gasEstimates": {
     "creation": {
       "codeDepositCost": "17200",
@@ -37,10 +37,10 @@
     }
   },
   "functionHashes": {},
-  "filename": "/Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/.embark/node_modules/@openzeppelin/contracts/math/SafeMath.sol",
-  "originalFilename": "contracts//Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/.embark/node_modules/@openzeppelin/contracts/math/SafeMath.sol",
-  "path": "/Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/contracts/.embark/node_modules/@openzeppelin/contracts/math/SafeMath.sol",
+  "filename": "/Users/powerbite/Documents/myrepos/nfty/.embark/node_modules/@openzeppelin/contracts/math/SafeMath.sol",
+  "originalFilename": "contracts//Users/powerbite/Documents/myrepos/nfty/.embark/node_modules/@openzeppelin/contracts/math/SafeMath.sol",
+  "path": "/Users/powerbite/Documents/myrepos/nfty/contracts/.embark/node_modules/@openzeppelin/contracts/math/SafeMath.sol",
   "type": "file",
   "deploymentAccount": "0xF652FcF94b5BbDCAC3BF508c6453Cca69bB4213A",
-  "transactionHash": "0x15a9a134c0a1e5730ef00a85893666ef294fa1de0c6b3ca4814ccea466f8676d"
+  "transactionHash": "0x2788daf90893d19563e2fffccd2723f11b7987a7bf42ea4ae26b8f89016abb6b"
 }

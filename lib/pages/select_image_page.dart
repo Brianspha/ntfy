@@ -275,17 +275,13 @@ class SelectImagePageState extends State<SelectImagePage> {
                                           0.9,
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              .6,
+                                              .55,
                                       child: Column(
                                         children: [
-                                          MaterialPicker(
+                                          ColorPicker(
                                             pickerColor: currentColor,
-                                            enableLabel: true,
                                             onColorChanged: (Color value) {
                                               changeColor(value);
-                                              Navigator.of(context,
-                                                      rootNavigator: true)
-                                                  .pop();
                                             },
                                           ),
                                           TextButton(
@@ -313,7 +309,7 @@ class SelectImagePageState extends State<SelectImagePage> {
                           child: Text(
                             "Change Color",
                             style: TextStyle(
-                                color: AppColors.primaryColor, fontSize: 15),
+                                color: AppColors.black, fontSize: 15),
                           ),
                         )),
                   ),

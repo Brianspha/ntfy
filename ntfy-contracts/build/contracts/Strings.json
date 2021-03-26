@@ -1,19 +1,19 @@
 {
   "abiDefinition": [],
-  "deployedAddress": "0xffbbB64d5D29983eAd2cB15164a59aaf6A1f3217",
+  "deployedAddress": "0x6934A33eBe8a96986966FDf031bBDF494e4b4f71",
   "className": "Strings",
   "args": [],
-  "gas": 76398,
+  "gas": 72106,
   "gasPrice": "20000000000",
   "silent": false,
   "track": true,
   "deploy": true,
-  "realRuntimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122037ce593cd2ca364f1d",
+  "realRuntimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220a112b8c93cf3a4b74f",
   "realArgs": [],
-  "code": "60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122037ce593cd2ca364f1d0c583312480c9431377e0d3f2483d864eb9bef0da3376d64736f6c63430006020033",
-  "runtimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122037ce593cd2ca364f1d0c583312480c9431377e0d3f2483d864eb9bef0da3376d64736f6c63430006020033",
+  "code": "60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220a112b8c93cf3a4b74fe6dc7820f4fbaa9a28a43e4f74a6d95064b86fffde2c5464736f6c63430006020033",
+  "runtimeBytecode": "73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220a112b8c93cf3a4b74fe6dc7820f4fbaa9a28a43e4f74a6d95064b86fffde2c5464736f6c63430006020033",
   "linkReferences": {},
-  "swarmHash": "0c583312480c9431377e0d3f2483d864eb9bef0da3376d64736f6c6343000602",
+  "swarmHash": "e6dc7820f4fbaa9a28a43e4f74a6d95064b86fffde2c5464736f6c6343000602",
   "gasEstimates": {
     "creation": {
       "codeDepositCost": "17200",
@@ -25,10 +25,10 @@
     }
   },
   "functionHashes": {},
-  "filename": "/Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/.embark/node_modules/@openzeppelin/contracts/utils/Strings.sol",
-  "originalFilename": "contracts//Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/.embark/node_modules/@openzeppelin/contracts/utils/Strings.sol",
-  "path": "/Users/powerbite/Documents/myrepos/ntfy/ntfy-contracts/contracts/.embark/node_modules/@openzeppelin/contracts/utils/Strings.sol",
+  "filename": "/Users/powerbite/Documents/myrepos/nfty/.embark/node_modules/@openzeppelin/contracts/utils/Strings.sol",
+  "originalFilename": "contracts//Users/powerbite/Documents/myrepos/nfty/.embark/node_modules/@openzeppelin/contracts/utils/Strings.sol",
+  "path": "/Users/powerbite/Documents/myrepos/nfty/contracts/.embark/node_modules/@openzeppelin/contracts/utils/Strings.sol",
   "type": "file",
   "deploymentAccount": "0xF652FcF94b5BbDCAC3BF508c6453Cca69bB4213A",
-  "transactionHash": "0x4681035576535ddaf466bb4f99d1353b7c1cea6313bc43f0ac1e73303d84c026"
+  "transactionHash": "0x0c05e2a8baf9aadceaf335e9f4d3412a2d64b7c02072860edc9f2c27018fd2b0"
 }

@@ -5,7 +5,7 @@ import 'package:ntfy/scoped_models/app_store.dart';
 import 'package:ntfy/ui/shared/app_colors.dart';
 import 'package:scoped_model/scoped_model.dart';
 
-import 'main_menu_V2.dart';
+import 'dashboard_page_v2.dart';
 
 class ApplicationWalkThroughPage extends StatefulWidget {
   @override
