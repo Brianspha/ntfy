@@ -38,12 +38,12 @@ Change directory into the ``nfty-contracts`` folder and run ``yarn`` after ``yar
 14. [Select Image (Minted)](https://siasky.net/HAF_FIABQZI17zAFe35OAFyoGmWlRYZ8MefKJY4T5azVSw)
 
 ### Screenshots  (Web)
-1. [](https://siasky.net/_AJQ1Ok_swtz_v4gGTVLRKhQLucPqNW1vn959pVEazm8lw)
-2. [](https://siasky.net/fAJFAlfY9s9LLjrnl__6V2jH9rgBp1UvT3nAGtrCrhKxhg)
-3. [](https://siasky.net/fATrGGU5ouwwBeDIydjEwSc1NBcnTD3JYXW2kmTR2mVC2w)
-4. [](https://siasky.net/vAF50N5ls3QJ3_OIh1lFnXvmhNa3D5iNZvcVpT02Yj6kmg)
-5. [](https://siasky.net/_ARHIGbEuOyFNa7KBYB8yoovwpBABpIsIld5c6RAbNnfTw)
-6. [](https://siasky.net/fAVf3YX2ZPe_ST77Jhu48Vfx6i4ZCZDTzEvcGpw3_SpcLw)
+1. ![](https://siasky.net/_AJQ1Ok_swtz_v4gGTVLRKhQLucPqNW1vn959pVEazm8lw)
+2. ![](https://siasky.net/fAJFAlfY9s9LLjrnl__6V2jH9rgBp1UvT3nAGtrCrhKxhg)
+3. ![](https://siasky.net/fATrGGU5ouwwBeDIydjEwSc1NBcnTD3JYXW2kmTR2mVC2w)
+4. ![](https://siasky.net/vAF50N5ls3QJ3_OIh1lFnXvmhNa3D5iNZvcVpT02Yj6kmg)
+5. ![](https://siasky.net/_ARHIGbEuOyFNa7KBYB8yoovwpBABpIsIld5c6RAbNnfTw)
+6. ![](https://siasky.net/fAVf3YX2ZPe_ST77Jhu48Vfx6i4ZCZDTzEvcGpw3_SpcLw)
 
 #### Demo ( Click to watch Video)
 
