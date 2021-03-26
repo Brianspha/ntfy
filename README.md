@@ -51,7 +51,7 @@ Change directory into the ``nfty-contracts`` folder and run ``yarn`` after ``yar
 
 ### App Builds
 
-1. [Android APK](https://siasky.net/AAB5hq9-0ACMA2jvpWOP7mI3IOVNr4NBRnt90VY-YcdRMQ)
+1. [Android APK](https://siasky.net/AADJdhlD_634u2k7JeD6Z26K4JakBjPO1S1wPtd6nePJsw)
 2. [IOS Bundle](https://siasky.net/AACrGtZ3BBxUW-0LQqcDKURnd6vPit4PYke71lg0iCbqVA)
 
 
