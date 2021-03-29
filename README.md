@@ -3,7 +3,7 @@
 
 ## NB.
 
-Please ensure that the NFT contract used to test the app implements theses 2 functions for minting and burning tokens
+Please ensure that the NFT contract used to test the app implements theses  functions defined in the file below
 
 https://github.com/Brianspha/ntfy/blob/main/ntfy-contracts/contracts/nfty.sol
 
