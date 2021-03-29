@@ -1,6 +1,12 @@
 # ntfy
  Part of the IDEA Markets Bounty
 
+## NB.
+
+Please ensure that the NFT contract used to test the app implements theses 2 functions for minting and burning tokens
+
+https://github.com/Brianspha/ntfy/blob/main/ntfy-contracts/contracts/nfty.sol
+
 ### Installation Mobile
 
 Open the project using android studio or vs code then install the packages by clicking on the ``pubspec.yaml`` file and clicking get depencies. Generally the compiler will warn you to get depencies
