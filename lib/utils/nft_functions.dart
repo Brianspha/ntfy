@@ -30,17 +30,21 @@ class NFTFunctions {
     print("user: $user");
     Web3Client ethClient = new Web3Client(user.network_url, httpClient);
     print("private_key: ${user.private_key}");
-    ;
+
     DeployedContract contract = await loadContract();
     final ethFunction = contract.function(functionName);
     EthPrivateKey credentials = EthPrivateKey.fromHex(user.private_key);
+    var pub_address =await credentials.extractAddress();
+    print("EthereumAddress.fromHex: ${EthereumAddress.fromHex(pub_address.hex)}");
     var result = await ethClient.sendTransaction(
       credentials,
       Transaction.callContract(
         contract: contract,
         function: ethFunction,
         parameters: args,
+        from: EthereumAddress.fromHex(pub_address.hex)
       ),
+      fetchChainIdFromNetworkId: true
     );
     print("results of sending transaction: $result");
     return result;
