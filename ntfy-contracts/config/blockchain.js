@@ -1,5 +1,6 @@
 // This file contains only the basic configuration you need to run Embark's node
 // For additional configurations, see: https://framework.embarklabs.io/docs/blockchain_configuration.html
+require('dotenv').config()
 module.exports = {
   // default applies to all environments
   default: {
@@ -40,12 +41,10 @@ module.exports = {
   },
 
   externalnode: {
-    endpoint: "URL_OF_THE_NODE", // Endpoint of an node to connect to. Can be on localhost or on the internet
+    endpoint: process.env.NODE_URL, // Endpoint of an node to connect to. Can be on localhost or on the internet
     accounts: [
       {
-        mnemonic: "YOUR_MNEMONIC",
-        hdpath: "m/44'/60'/0'/0/",
-        numAddresses: "1"
+        privateKey: process.env.PRIVATE_KEY
       }
     ]
   },
@@ -67,7 +66,7 @@ module.exports = {
     accounts: [
       {
         nodeAccounts: true,
-        password: "config/livenet/password"
+        privateKey: process.env.PRIVATE_KEY
       }
     ]
   }

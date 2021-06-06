@@ -13,6 +13,7 @@ import 'package:prompt_dialog/prompt_dialog.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 import '../service_locator.dart';
+import 'dashboard_page.dart';
 
 class TokenSettingsPage extends StatefulWidget {
   @override
@@ -185,7 +186,10 @@ class TokenSettingsPageState extends State<TokenSettingsPage> {
                           children: [
                             IconButton(
                               onPressed: () {
-                                Navigator.pop(context);
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => FrontWidget(()=>{})),
+                                );
                               },
                               icon: Icon(Icons.arrow_back),
                               color: AppColors.primaryColor,

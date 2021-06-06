@@ -16,6 +16,7 @@ import 'package:prompt_dialog/prompt_dialog.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 import '../service_locator.dart';
+import 'package:ntfy/pages/dashboard_page.dart';
 
 class NetworkSettingsPage extends StatefulWidget {
   @override
@@ -62,6 +63,7 @@ class NetworkSettingsPageState extends State<NetworkSettingsPage> {
 
     // TODO: implement build
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: ScopedModelDescendant<AppStore>(
             builder: (BuildContext context, Widget child, AppStore model) {
@@ -241,7 +243,10 @@ class NetworkSettingsPageState extends State<NetworkSettingsPage> {
                           children: [
                             IconButton(
                               onPressed: () {
-                                Navigator.pop(context);
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => FrontWidget(()=>{})),
+                                );
                               },
                               icon: Icon(Icons.arrow_back),
                               color: AppColors.primaryColor,

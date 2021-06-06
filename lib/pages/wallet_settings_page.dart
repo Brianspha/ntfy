@@ -14,6 +14,7 @@ import 'package:prompt_dialog/prompt_dialog.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 import '../service_locator.dart';
+import 'dashboard_page.dart';
 
 class WalletSettingsPage extends StatefulWidget {
   @override
@@ -60,6 +61,7 @@ class WalletSettingsPageState extends State<WalletSettingsPage> {
 
     // TODO: implement build
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       body: SafeArea(
         child: ScopedModelDescendant<AppStore>(
             builder: (BuildContext context, Widget child, AppStore model) {
@@ -213,7 +215,10 @@ class WalletSettingsPageState extends State<WalletSettingsPage> {
                           children: [
                             IconButton(
                               onPressed: () {
-                                Navigator.pop(context);
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => FrontWidget(()=>{})),
+                                );
                               },
                               icon: Icon(Icons.arrow_back),
                               color: AppColors.primaryColor,
